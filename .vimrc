@@ -4,6 +4,10 @@ filetype plugin indent on
 execute pathogen#infect()
 "call pathogen#helptags()
 
+
+" search for tags file
+set tags=./tags,./TAGS,tags;~,TAGS;~
+
 au BufNewFile,BufRead *.txt map j gj
 au BufNewFile,BufRead *.txt map k gk
 au BufNewFile,BufRead *.txt set backspace=2
