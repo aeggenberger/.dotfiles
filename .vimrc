@@ -2,7 +2,7 @@ set nocompatible
 syntax enable
 filetype plugin indent on
 execute pathogen#infect()
-"call pathogen#helptags()
+execute pathogen#helptags()
 
 
 " search for tags file
@@ -76,3 +76,8 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+" Prompt for a command to run map
+" ViMux plugin
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vm :VimuxPromptCommand("make ")<CR>
