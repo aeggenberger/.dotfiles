@@ -81,3 +81,15 @@ python del powerline_setup
 " ViMux plugin
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vm :VimuxPromptCommand("make ")<CR>
+
+" https://github.com/ds26gte/scmindent
+" scheme indent setting
+autocmd bufread,bufnewfile *.lisp,*.scm setlocal equalprg=scmindent.rkt
+
+" tslime mapping    
+let g:tslime_normal_mapping = '<leader>t'
+let g:tslime_visual_mapping = '<leader>t'
+let g:tslime_vars_mapping = '<leader>T'
+let g:tslime_ensure_trailing_newlines = 1
+au BufNewFile,BufRead *.py let g:tslime_ensure_trailing_newlines = 2
+
