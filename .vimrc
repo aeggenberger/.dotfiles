@@ -81,7 +81,7 @@ python del powerline_setup
 " ViMux plugin
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vm :VimuxPromptCommand("make ")<CR>
-map <Leader>vcd :VimuxRunCommand("cd ". expand('%:p:h'))<CR>
+map <Leader>vcd :VimuxRunCommand("cd ".'"'.expand('%:p:h').'"')<CR>
 
 " https://github.com/ds26gte/scmindent
 " scheme indent setting
