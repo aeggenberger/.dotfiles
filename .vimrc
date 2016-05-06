@@ -87,6 +87,7 @@ map <Leader>vm :VimuxPromptCommand("make ")<CR>
 autocmd bufread,bufnewfile *.lisp,*.scm setlocal equalprg=scmindent.rkt
 
 " tslime mapping    
+" https://github.com/sjl/tslime.vim
 let g:tslime_normal_mapping = '<leader>t'
 let g:tslime_visual_mapping = '<leader>t'
 let g:tslime_vars_mapping = '<leader>T'
