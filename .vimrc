@@ -4,6 +4,8 @@ filetype plugin indent on
 execute pathogen#infect()
 execute pathogen#helptags()
 
+" allow editing of crontab files in place
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 " search for tags file
 set tags=./tags,./TAGS,tags;~,TAGS;~
