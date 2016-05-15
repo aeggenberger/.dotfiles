@@ -18,6 +18,11 @@ au BufNewFile,BufRead *.js set shiftwidth=4
 au BufNewFile,BufRead *.js set tabstop=4
 au BufNewFile,BufRead *.js set expandtab
 
+" add spaces instead of tabs to scheme files
+" to prevent problems when using Racket as REPL
+au Filetype scheme set shiftwidth=8
+au Filetype scheme set expandtab
+
 au Filetype gitcommit setlocal spell textwidth=72
 
 source ~/.pyvimrc
