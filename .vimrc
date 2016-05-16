@@ -1,8 +1,13 @@
 set nocompatible
 syntax enable
 filetype plugin indent on
+
+" set runtimepath for fzf
+set rtp+=/usr/local/opt/fzf
+
 execute pathogen#infect()
 execute pathogen#helptags()
+
 
 " allow editing of crontab files in place
 autocmd filetype crontab setlocal nobackup nowritebackup
@@ -102,5 +107,3 @@ let g:tslime_vars_mapping = '<leader>T'
 let g:tslime_ensure_trailing_newlines = 1
 au BufNewFile,BufRead *.py let g:tslime_ensure_trailing_newlines = 2
 
-" set runtimepath for fzf
-set rtp+=/usr/local/opt/fzf
