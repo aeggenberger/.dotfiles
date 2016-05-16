@@ -101,3 +101,6 @@ let g:tslime_visual_mapping = '<leader>t'
 let g:tslime_vars_mapping = '<leader>T'
 let g:tslime_ensure_trailing_newlines = 1
 au BufNewFile,BufRead *.py let g:tslime_ensure_trailing_newlines = 2
+
+" set runtimepath for fzf
+set rtp+=/usr/local/opt/fzf
