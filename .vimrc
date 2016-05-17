@@ -1,6 +1,10 @@
 set nocompatible
 syntax enable
 filetype plugin indent on
+
+" omnicomplete
+set omnifunc=syntaxcomplete#Complete
+
 execute pathogen#infect()
 execute pathogen#helptags()
 
