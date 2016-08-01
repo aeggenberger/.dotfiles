@@ -34,4 +34,4 @@
 
  '(org-agenda-files
    (quote
-    ("/Volumes/homes/Andrew/Dropbox/Graphic/org/graphic.org"))))
+    ("/Volumes/homes/Andrew/Dropbox/Graphic/org/graphic.org")))
