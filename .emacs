@@ -24,7 +24,10 @@
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
- '(custom-enabled-themes (quote (wheatgrass))))
+ '(custom-enabled-themes (quote (wheatgrass)))
+ '(org-agenda-files
+   (quote
+    ("/Volumes/homes/Andrew/Dropbox/Graphic/org/graphic.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -35,3 +38,7 @@
  '(org-agenda-files
    (quote
     ("/Volumes/homes/Andrew/Dropbox/Graphic/org/graphic.org")))
+
+(require 'evil)
+;; Enable Evil mode ad default
+(evil-mode 1)
