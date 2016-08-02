@@ -108,3 +108,6 @@ au BufNewFile,BufRead *.py let g:tslime_ensure_trailing_newlines = 2
 
 " set runtimepath for fzf
 set rtp+=/usr/local/opt/fzf
+
+" enable gjslint (Google Closure Linter)
+let g:syntastic_javascript_checkers = ['gjslint']
