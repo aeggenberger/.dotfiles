@@ -39,6 +39,7 @@
    (quote
     ("/Volumes/homes/Andrew/Dropbox/Graphic/org/graphic.org")))
 
-(require 'evil)
+;; (require 'evil)
 ;; Enable Evil mode ad default
-(evil-mode 1)
+;; (evil-mode 1)
+;; SECOND THOUGHTS!!!!
