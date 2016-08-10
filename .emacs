@@ -43,3 +43,9 @@
 ;; Enable Evil mode ad default
 ;; (evil-mode 1)
 ;; SECOND THOUGHTS!!!!
+
+;; active Babel languages
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   ))
