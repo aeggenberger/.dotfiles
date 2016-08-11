@@ -49,3 +49,6 @@
  'org-babel-load-languages
  '((python . t)
    ))
+
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
