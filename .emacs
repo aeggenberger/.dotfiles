@@ -57,3 +57,6 @@
   (exec-path-from-shell-initialize))
 
 (setq geiser-default-implementation 'guile)
+
+;; org mode fontification of source code blocks
+(setq org-src-fontify-natively t)
