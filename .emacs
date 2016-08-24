@@ -60,3 +60,5 @@
 
 (global-set-key (kbd "M-p") 'previous-logical-line)
 (global-set-key (kbd "M-n") 'next-logical-line)
+
+(global-set-key (kbd "C-x g") 'magit-status)
