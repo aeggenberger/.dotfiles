@@ -25,11 +25,7 @@
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(custom-enabled-themes (quote (wheatgrass)))
- '(magit-commit-arguments nil)
- '(org-agenda-files
-   (quote
-    ("/Volumes/homes/Andrew/Dropbox/Graphic/org/graphic.org")))
- '(rainbow-delimiters-max-face-count 6))
+ '(org-agenda-files (quote ("~/Dropbox/Graphic/org/graphic.org"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -61,3 +57,6 @@
 
 ;; org mode fontification of source code blocks
 (setq org-src-fontify-natively t)
+
+(global-set-key (kbd "M-p") 'previous-logical-line)
+(global-set-key (kbd "M-n") 'next-logical-line)
