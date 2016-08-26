@@ -62,3 +62,5 @@
 (global-set-key (kbd "M-n") 'next-logical-line)
 
 (global-set-key (kbd "C-x g") 'magit-status)
+
+(setq server-socket-dir "/tmp/emacs_server/")
