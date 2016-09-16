@@ -25,7 +25,10 @@
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(custom-enabled-themes (quote (wheatgrass)))
- '(org-agenda-files (quote ("~/Dropbox/Graphic/org/graphic.org"))))
+ '(org-agenda-files (quote ("~/Dropbox/Graphic/org/graphic.org")))
+ '(org-ascii-indented-line-width 0)
+ '(org-ascii-paragraph-spacing 0)
+ '(org-ascii-text-width 10000))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,3 +67,15 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (setq server-socket-dir "/tmp/emacs_server/")
+
+(defun org-remove-headlines (backend)
+  "Remove headlines with :no_title: tag."
+  (org-map-entries (lambda () (let ((beg (point)))
+                                (outline-next-visible-heading 1)
+                                (backward-char)
+                                (delete-region beg (point))))
+                   "no_export" tree)
+  (org-map-entries (lambda () (delete-region (point-at-bol) (point-at-eol)))
+                   "no_title"))
+
+(add-hook 'org-export-before-processing-hook 'org-remove-headlines)
