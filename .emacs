@@ -64,3 +64,11 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (setq server-socket-dir "/tmp/emacs_server/")
+
+(setq org-capture-templates
+      '(("t" "Timeline" entry (file+datetree+prompt "~/Dropbox/Graphic/org/timelines.org")
+	 "* %t %^{What happened} %^g")
+	("l" "Log Events" entry (file+datetree "~/Dropbox/Graphic/org/worklog.org")
+	 "* %t %^{What happened} %^g")))
+
+(global-set-key (kbd "C-c c") 'Org-Capture)
